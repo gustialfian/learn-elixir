@@ -33,3 +33,6 @@ is_function/1
 ```
 
 untuk tipe data (linked) List dan tuple sedikit berbeda yaitu list dimodelkan sebagai linked list yang dimana setiap operasi yang dilakukan pada akhir element akan cenderung lebih lama karena elixir akan melakukan traverse pada list hingga menemukan index element yang akan di lakukan operasi. sedangkan tupel disimpan secara berdekatan dalam memori. jadi jika kita ingin mendapatkan size dan element pada tupel terserah besar dan letaknya dimana akan cenderung lebih cepat, tetapi untuk penambahan dan perubahan cenderung lebih lambat. pada elixir kita bisa memastikan kecepatan dari fungsi tersebut dari namanya. jika menggunakan length maka kecepatanya linier dgn jumlah data, sedangkan size kecepatannya akan konstan.
+
+## basic operator
+elixir dapat membandingkan dua tipe data seperti [1, 2, 3] < {:ok, 123} dengan aturan seperti berikut `number < atom < reference < function < port < pid < tuple < map < list < bitstring`
