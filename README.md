@@ -36,3 +36,11 @@ untuk tipe data (linked) List dan tuple sedikit berbeda yaitu list dimodelkan se
 
 ## basic operator
 elixir dapat membandingkan dua tipe data seperti [1, 2, 3] < {:ok, 123} dengan aturan seperti berikut `number < atom < reference < function < port < pid < tuple < map < list < bitstring`
+
+## recursion
+it's weird at first. until now I can not imagine how I program without forloop and in elixir or functional programming at general, because we can not mutate a variable it is impossible todo a simple forloop. But we have recursion to the rescue, and until know i does not understand it fully but in elixir it is to under stand recursion properly. see 7.recursion/reducer.exs.
+
+## eager vs lazy
+eager transformation harus menerima keseluruhan list dan memberikan hasil sedang lazy melakukan trasformasi satu persatu jadi list tidak perlu menerima seluruh list cukup yang nilai yang sedang dikerjakan. 
+
+ini berguna saat melakukan transormasi data yang besar atau mencapai tidak terbatas.
